@@ -1,0 +1,156 @@
+.Dashboard {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto;
+  gap: 20px;
+  padding: 20px;
+}
+
+.today_focus {
+  grid-column: 1;
+  grid-row: 1;
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.today_focus > h2 {
+  text-transform: uppercase;
+}
+
+.motivation_section {
+  grid-column: 2;
+  grid-row: 1;
+  background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+  color: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.stats_section {
+  grid-column: 1;
+  grid-row: 2;
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.account_section {
+  grid-column: 2;
+  grid-row: 2;
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.view_more_btn {
+  margin-right: 20px;
+}
+
+.section_header > h2 {
+  flex: 1;
+  padding-left: 30px;
+}
+
+.card_header {
+  display: flex;
+  width: 100%;
+}
+
+.card_header > span {
+  font-size: 26px;
+  flex: 1;
+}
+
+.refresh_btn {
+  border: none;
+  border-radius: 5px;
+  background: none;
+  cursor: pointer;
+  width: 50px;
+}
+
+/* ===== 통계/분석 섹션 ===== */
+.stats_section {
+  background-color: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stats_section .section_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.stats_section h2 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #6b7280;
+}
+
+.stats_summary_simple {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.stat_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9fafb;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.stat_number {
+  font-size: 32px;
+  font-weight: 700;
+  color: #3b82f6;
+  margin-bottom: 8px;
+}
+
+.stat_text {
+  font-size: 13px;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+/* 다크모드 */
+body.dark-mode .stats_section {
+  background-color: #374151;
+}
+
+body.dark-mode .stats_section h2 {
+  color: #f9fafb;
+}
+
+body.dark-mode .stat_box {
+  background-color: #4b5563;
+}
+
+body.dark-mode .stat_number {
+  color: #60a5fa;
+}
+
+body.dark-mode .stat_text {
+  color: #f9fafb;
+}

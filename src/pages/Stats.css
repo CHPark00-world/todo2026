@@ -1,0 +1,141 @@
+.Stats {
+  padding: 30px;
+  max-width: 1400px;
+}
+
+/* 헤더 */
+.stats_header {
+  margin-bottom: 30px;
+}
+
+.stats_header h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #9ca3af;
+}
+
+/* 그리드 레이아웃 */
+.stats_grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+.left_section,
+.right_section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* 카드 공통 스타일 */
+.chart_card,
+.summary_card,
+.completion_card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chart_card h2,
+.summary_card h2,
+.completion_card h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 20px;
+}
+
+/* 카테고리 차트 */
+.category_charts {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.donut_wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.donut_wrapper .chart_label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.percentage {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+/* 이번 달 통계 */
+.summary_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.summary_item {
+  text-align: center;
+}
+
+.summary_label {
+  font-size: 10px;
+  color: #9ca3af;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.summary_value {
+  font-size: 48px;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 4px;
+}
+
+.summary_unit {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* 완료율 도넛 */
+.completion_wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.completion_wrapper .completion_label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.completion_label .percentage {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1f2937;
+}
+
+/* 반응형 */
+@media (max-width: 1024px) {
+  .stats_grid {
+    grid-template-columns: 1fr;
+  }
+}

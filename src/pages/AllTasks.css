@@ -1,0 +1,88 @@
+.AllTasks {
+  padding: 20px;
+}
+
+.searchbar input {
+  padding: 8px 8px 8px 16px;
+  width: 230px;
+  border-radius: 5px;
+  border: 1px solid #d1d5db;
+  background-color: white;
+}
+
+.searchbar input:focus {
+  outline: none;
+  border-color: #3b82f6;
+}
+
+.filter_selects {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.filter_select {
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: 1px solid #d1d5db;
+  background-color: white;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.filter_select:hover {
+  border-color: #3b82f6;
+  background-color: #f0f9ff;
+}
+
+.filter_select:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.tasks_table {
+  margin-top: 30px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.table_header {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 16px;
+  border-bottom: 2px solid #e5e7eb;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #6b7280;
+  font-size: 13px;
+}
+
+.table_header > span:first-child {
+  width: 51px;
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.searchbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.add_button {
+  margin-right: 40px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.add_button:hover {
+  transform: scale(1.1);
+  transition: all 0.2s ease;
+  background-color: #f9fafb;
+}

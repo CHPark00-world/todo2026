@@ -1,0 +1,58 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+body {
+  background-color: #f9fafb;
+  color: #1f2937;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+  background-color: #1f2937;
+  color: #f9fafb;
+}
+
+body.dark-mode .Header {
+  background-color: #374151;
+  color: #f9fafb;
+}
+
+body.dark-mode .content_area {
+  background-color: #111827;
+}
+
+body.dark-mode .Sidebar {
+  background-color: #111827;
+}
+
+body.dark-mode .settings_card,
+body.dark-mode .stats_section,
+body.dark-mode .chart_card,
+body.dark-mode .tasks_table,
+body.dark-mode .today_focus,
+body.dark-mode .motivation_card,
+body.dark-mode .stats_panel {
+  background-color: #374151;
+  color: #f9fafb;
+}
+
+body.dark-mode .settings_card h2,
+body.dark-mode .chart_card h2 {
+  color: #f9fafb;
+}
+
+body.dark-mode input,
+body.dark-mode select {
+  background-color: #4b5563;
+  color: #f9fafb;
+  border-color: #6b7280;
+}
+
+body.dark-mode .task_row:hover {
+  background-color: #4b5563;
+}
