@@ -11,7 +11,7 @@ const Dashboard = () => {
 
   const totalTasks = MockData.length;
   const completedTasks = MockData.filter(
-    (task) => task.status === "completed"
+    (task) => task.status === "completed",
   ).length;
   const completionRate =
     totalTasks > 0 ? Math.round((completedTasks / totalTasks) * 100) : 0;
@@ -27,7 +27,13 @@ const Dashboard = () => {
         </div>
         <div className="tasks_preview">
           {recentTasks.map((task) => (
-            <TaskRow key={task.id} task={task} />
+            <TaskRow
+              key={task.id}
+              task={task}
+              onDelete={() => {}}
+              onToggleComplete={() => {}}
+              onEdit={() => {}}
+            />
           ))}
         </div>
       </section>
